@@ -1,0 +1,23 @@
+$main_black: #181717;
+$main_grey: #606060;
+$main_accent: #4CC9F0;
+$main_white: #FFFFFF;
+
+* {
+  background-color: $main_white;
+  color: $main_black;
+}
+
+body {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  letter-spacing: .1rem;
+}
+
+.blue-block {
+  background: $main_white;
+  background: linear-gradient(180deg, $main_white 0%, $main_white 50%, $main_accent 50%, $main_accent 100%);
+}
