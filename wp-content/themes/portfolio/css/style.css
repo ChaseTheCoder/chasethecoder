@@ -18,7 +18,9 @@ body {
 }
 
 .spotlight-image {
-  width: 100px;
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .blue-block {

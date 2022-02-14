@@ -8,7 +8,7 @@
         <p class="lead">Software engineer, with strong soft skills.</p>
       </div>
       <div class="col-6">
-        <img class="spotlight-image"><?php the_post_thumbnail(); ?></img>
+        <img class="spotlight-image" src="<?php the_post_thumbnail();"" ?>
       </div>
     </div>
   <?php endwhile; ?>
