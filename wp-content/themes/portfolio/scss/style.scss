@@ -9,12 +9,23 @@ $main_white: #FFFFFF;
 }
 
 body {
+  width:90%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
+// ------------- NAVBAR
+.navbar{
+  width: 100%;
+}
+
 .navbar-brand {
   letter-spacing: .1rem;
+}
+
+// ------------- SPOTLIGHT
+.spotlight-image{
+  width: 100px;
 }
 
 .blue-block {

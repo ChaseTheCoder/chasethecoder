@@ -4,12 +4,21 @@
 }
 
 body {
+  width: 90%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
+.navbar {
+  width: 100%;
+}
+
 .navbar-brand {
   letter-spacing: 0.1rem;
+}
+
+.spotlight-image {
+  width: 100px;
 }
 
 .blue-block {
