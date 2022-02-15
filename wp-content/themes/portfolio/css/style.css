@@ -17,10 +17,43 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.spotlight-left {
+  padding-bottom: 15vh;
+  position: grid;
+}
+
+.front-header {
+  font-size: 4rem;
+  line-height: 0.9;
+}
+
+.front-subheader {
+  font-size: 1.6rem;
+  padding-top: 18px;
+  padding-right: 10vw;
+}
+
+.front-spotlight-text {
+  grid-area: 1/1/2/2;
+}
+
+.front-circle {
+  background-color: #4CC9F0;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  left: 300px;
+  margin-left: 200px;
+}
+
+.spotlight-right {
+  text-align: right;
+}
+
 .spotlight-image {
-  width: 40%;
-  height: auto;
-  margin: 0 auto;
+  width: auto;
+  height: 83vh;
+  border-radius: 15px;
 }
 
 .blue-block {
