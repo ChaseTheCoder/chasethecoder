@@ -18,6 +18,7 @@ body {
 .navbar{
   width: 100%;
   position:sticky;
+  background: rgba(255, 255, 255, 0.3)
 }
 
 .navbar-brand {
@@ -37,20 +38,17 @@ body {
 
 .front-subheader{
   font-size: 1.6rem;
-  padding-top: 18px;
+  padding-top: .5vh;
   padding-right: 10vw;
 }
-
-// .front-spotlight-text{
-//   grid-area: 1 / 1 / 2 / 2;
-// }
 
 .front-circle {
   background-color: $main_accent;
   border-radius: 50%;
   height: 275px;
   width: 275px;
-  margin-left: 200px;
+  margin-left: 10vw;
+  margin-top: -30vh;
 }
 
 .spotlight-right{
@@ -62,9 +60,32 @@ body {
   height: 83vh;
   border-radius: 15px;
 }
-
+@media only screen and (max-width: 768px){
+  .spotlight-image{
+    width: 100%;
+    height: auto;
+  }
+  .front-circle{
+    margin-left: 20vw;
+  }
+  .front-header{
+    font-size: 3rem;
+    line-height: .9;
+    margin-top: 10vh;
+  }
+  .front-subheader{
+    padding-right: 40vw;
+  }
+}
 
 .blue-block {
   background: $main_white;
   background: linear-gradient(180deg, $main_white 0%, $main_white 50%, $main_accent 50%, $main_accent 100%);
+}
+
+// ------------- BLOG PAGE ------------- //
+
+.post-thumbnail img {
+  width: 40%;
+  height: auto;
 }

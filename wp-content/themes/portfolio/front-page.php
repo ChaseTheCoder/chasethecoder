@@ -4,10 +4,8 @@
   <?php while(have_posts()): the_post();?>
     <div class="jumbotron spotlight row">
       <div class="col-md-6 col-12 align-self-end spotlight-left">
-        <div class="front-spotlight-text">
-          <p class="front-header">Hello, I'm </br>Chase Sheaff</p>
+          <p class="front-header">Hello, I'm </br>Chase Sheaff.</p>
           <p class="front-subheader">Software engineer with strong soft skills to learn any hard skill required.</p>
-        </div>
         <div class="front-circle"></div>
       </div>
       <div class="col-md-6 col-12 spotlight-right">

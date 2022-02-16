@@ -12,6 +12,7 @@ body {
 .navbar {
   width: 100%;
   position: sticky;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .navbar-brand {
@@ -29,7 +30,7 @@ body {
 
 .front-subheader {
   font-size: 1.6rem;
-  padding-top: 18px;
+  padding-top: 0.5vh;
   padding-right: 10vw;
 }
 
@@ -38,7 +39,8 @@ body {
   border-radius: 50%;
   height: 275px;
   width: 275px;
-  margin-left: 200px;
+  margin-left: 10vw;
+  margin-top: -30vh;
 }
 
 .spotlight-right {
@@ -51,9 +53,34 @@ body {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .spotlight-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .front-circle {
+    margin-left: 20vw;
+  }
+
+  .front-header {
+    font-size: 3rem;
+    line-height: 0.9;
+    margin-top: 10vh;
+  }
+
+  .front-subheader {
+    padding-right: 40vw;
+  }
+}
 .blue-block {
   background: #FFFFFF;
   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #4CC9F0 50%, #4CC9F0 100%);
+}
+
+.post-thumbnail img {
+  width: 40%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
