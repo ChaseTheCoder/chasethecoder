@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <script src="https://kit.fontawesome.com/87d48d01d5.js" crossorigin="anonymous"></script>    <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <?php wp_head(); ?>
   </head>
   <body>
