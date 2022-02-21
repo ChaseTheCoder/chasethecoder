@@ -32,6 +32,12 @@ body {
   color: #181717;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer-column {
+    width: 100%;
+    text-align: center !important;
+  }
+}
 .footer-right-text {
   text-decoration: none;
   color: #181717;
@@ -41,6 +47,10 @@ body {
 .footer-right-text:hover {
   color: #181717;
   text-decoration: underline;
+}
+
+.footer-icon {
+  padding-left: 10px;
 }
 
 .spotlight-left {
