@@ -61,7 +61,7 @@ body {
   padding-left: 10px;
 }
 
-// ------------- SPOTLIGHT
+// ------------- FRONT SPOTLIGHT
 
 .spotlight-left{
   padding-bottom: 15vh;
@@ -170,4 +170,120 @@ body {
 .post-thumbnail img {
   width: 40%;
   height: auto;
+}
+
+// ------------- FRONT SPOTLIGHT
+
+.blog-right{
+  padding-bottom: 15vh;
+}
+
+.front-header{
+  font-size: 4rem;
+  line-height: .9;
+}
+
+.front-subheader{
+  font-size: 1.6rem;
+  padding-top: .5vh;
+  padding-right: 10vw;
+}
+
+.front-circle {
+  background-color: $main_accent;
+  border-radius: 50%;
+  height: 275px;
+  width: 275px;
+  margin-left: 10vw;
+  margin-top: -30vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blog-left{
+  text-align: left;
+  background-color: transparent;
+}
+
+.blog-left img {
+  width: auto;
+  height: 83vh;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  align-items: left;
+}
+
+@media only screen and (max-width: 1150px){
+  .blog-left img {
+    width: 80%;
+    height: auto;
+  }
+  .blog-right{
+    padding-bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .blog-right{
+    padding-bottom: 5vh;
+  }
+
+  .spotlight-image{
+    width: 100%;
+    height: auto;
+  }
+  .front-circle{
+    margin-left: 20vw;
+  }
+  .front-header{
+    font-size: 3rem;
+    line-height: .9;
+    margin-top: 10vh;
+  }
+  .front-subheader{
+    padding-right: 40vw;
+  }
+  .blog-left img {
+    width: 80%;
+    height: auto;
+    display:block;
+    margin:auto;
+    border-radius: 15px;
+  }
+}
+
+.blue-block {
+  background: $main_white;
+  background: linear-gradient(180deg, $main_white 0%, $main_white 50%, $main_accent 50%, $main_accent 100%);
+}
+
+// ------------- POSTS
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.search-by{
+  position: sticky;
+}
+
+.post-prev-title {
+  text-decoration: none;
+  color: $main_black;
+  font-size: 2rem;
+}
+
+.post-prev-pub{
+  color: $main_grey;
+}
+
+.post-prev-cat a{
+  text-decoration: none;
+  color: $main_accent;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.post-prev-cat a:hover{
+  background-color: $main_grey;
 }
