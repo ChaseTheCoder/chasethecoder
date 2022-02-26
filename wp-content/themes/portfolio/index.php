@@ -9,7 +9,7 @@
     <?php endif; ?>
   </div>
   <div class="col-md-6 col-12 align-self-end blog-right">
-      <p class="front-header">Blog.</p>
+      <p class="front-header-blog">Blog.</p>
     <div class="front-circle"><?php get_field('page_subheader'); ?></div>
   </div>
 </div>
