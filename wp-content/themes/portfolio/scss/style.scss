@@ -156,6 +156,7 @@ body {
 
 .about-content{
   width: 80%;
+  margin: auto;
 }
 
 .about-content2{
@@ -165,6 +166,12 @@ body {
 @media only screen and (max-width: 768px){
   .about-content{
     width: 100%;
+  }
+  .about-content2{
+    padding-top: 1vh;
+  }
+  .about-title{
+    padding-top: 3vh;
   }
 }
 
