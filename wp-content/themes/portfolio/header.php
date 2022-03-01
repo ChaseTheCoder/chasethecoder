@@ -20,7 +20,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="<?php echo get_site_url()."/#about";?>">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('/blog');?>">Blog</a>

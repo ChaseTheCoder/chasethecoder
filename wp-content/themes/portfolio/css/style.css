@@ -136,6 +136,10 @@ body {
   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #4CC9F0 50%, #4CC9F0 100%);
 }
 
+.about-image-column {
+  width: 100%;
+}
+
 .about-image {
   width: 100%;
   border-radius: 15px;
@@ -159,10 +163,38 @@ body {
     padding-top: 1vh;
   }
 
-  .about-title {
+  .section-title {
     padding-top: 3vh;
   }
+
+  .about-image {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
 }
+.project-title {
+  text-transform: uppercase;
+}
+
+.project-link-row {
+  height: auto;
+}
+
+.project-link {
+  text-decoration: underline;
+  color: #606060;
+}
+
+.project-link:hover {
+  color: #4CC9F0;
+}
+
+.private-repo {
+  color: #606060;
+}
+
 .post-thumbnail img {
   width: 40%;
   height: auto;

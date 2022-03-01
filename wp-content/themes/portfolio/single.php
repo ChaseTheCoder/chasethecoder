@@ -11,8 +11,12 @@
                 <?php echo '<img src="http://localhost:8888/chasethecoder/wp-content/uploads/2022/02/clint-patterson-dYEuFB8KQJk-unsplash-scaled.jpg" />'; ?>
           <?php endif; ?>
         </a>
-        <a class="post-prev-title" href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
+        <a class="post-prev-title" href="<?php the_permalink(); ?>"><p class="pt-3"><?php the_title(); ?></p></a>
         <p class="post-prev-pub">Published by <b><?php the_author(); ?></b> on <b><?php the_time('F j, Y'); ?></b></p>
+        <?php  $fields = get_fields(); ?>
+        <?php if( $fields ): ?>
+          <p class="post-prev-pub"><?php echo $fields['languages'] ?></p>
+        <?php endif; ?>
         <p class="post-prev-cat"><?php echo get_the_category_list(' '); ?></p>
         <p class="post-prev-excerpt"><?php the_content(); ?></p>
       </div>

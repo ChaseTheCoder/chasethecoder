@@ -147,8 +147,10 @@ body {
   background: linear-gradient(180deg, $main_white 0%, $main_white 50%, $main_accent 50%, $main_accent 100%);
 }
 
-// ABOUT SECTION
-
+// ------------- ABOUT SECTION
+.about-image-column{
+  width: 100%;
+}
 .about-image{
   width: 100%;
   border-radius: 15px;
@@ -170,9 +172,37 @@ body {
   .about-content2{
     padding-top: 1vh;
   }
-  .about-title{
+  .section-title{
     padding-top: 3vh;
   }
+  .about-image{
+    width: 70%;
+    height: auto;
+    display:block;
+    margin:auto;
+  }
+}
+
+// ------------- PROJECT SECTION
+.project-title{
+  text-transform: uppercase;
+}
+
+.project-link-row{
+  height: auto;
+}
+
+.project-link{
+  text-decoration: underline;
+  color: $main_grey;
+}
+
+.project-link:hover {
+  color: $main_accent;
+}
+
+.private-repo{
+  color: $main_grey;
 }
 
 // ------------- BLOG PAGE ------------- //

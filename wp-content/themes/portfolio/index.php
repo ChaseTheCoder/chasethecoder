@@ -41,6 +41,7 @@
         <p class="post-prev-pub">Published by <b><?php the_author(); ?></b> on <b><?php the_time('F j, Y'); ?></b></p>
         <p class="post-prev-cat"><?php echo get_the_category_list(' '); ?></p>
       </div>
+      <?php wp_reset_postdata(); ?>
     <?php endwhile; ?>
   </div>
 </div>
