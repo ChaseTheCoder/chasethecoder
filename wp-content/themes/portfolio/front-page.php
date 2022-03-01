@@ -21,7 +21,7 @@
   <div class="row section about-section py-5">
     <div class="col-12 col-md-6 col-sm-pull-6 col-lg-8 pb-md-0 pb-2">
       <div class="about-content">
-        <h1 class="about-title"><?php echo $fields['about_title']; ?></h1>
+        <h1 id="#about" class="about-title"><?php echo $fields['about_title']; ?></h1>
         <p class="about-content2"><?php echo $fields['about_content']; ?></p>
       </div>
     </div>

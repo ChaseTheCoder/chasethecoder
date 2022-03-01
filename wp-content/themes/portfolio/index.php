@@ -14,18 +14,21 @@
   </div>
 </div>
 
-<hr/>
-
 <div class="row">
   <div class="col-4 search-by">
+    <hr/>
     <p>Search By Topic</p>
-    <p>career change, anchor chart</p>
+    <?php $categories = get_categories();
+      foreach($categories as $category) {
+        echo '<a class="post-search-category-link" href="' . get_category_link($category->term_id) . '"><p class="post-search-category">' . $category->name . '</p></a>';
+      } ?>
   </div>
   <div class="col-8">
    <?php 
     while(have_posts()):
       the_post(); ?>
       <div>
+        <hr/>
         <a class="post-thumbnail" href="<?php the_permalink(); ?>">
           <?php if ( has_post_thumbnail() ) : ?>
               <?php the_post_thumbnail(); ?>
@@ -38,7 +41,6 @@
         <p class="post-prev-pub">Published by <b><?php the_author(); ?></b> on <b><?php the_time('F j, Y'); ?></b></p>
         <p class="post-prev-cat"><?php echo get_the_category_list(' '); ?></p>
       </div>
-      <hr/>
     <?php endwhile; ?>
   </div>
 </div>

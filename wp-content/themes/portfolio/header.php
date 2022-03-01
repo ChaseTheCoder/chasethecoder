@@ -15,25 +15,22 @@
     <?php wp_head(); ?>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top mt-1">
-        <h1><a class="navbar-brand" href="<?php echo site_url('/'); ?>">chase<span class="blue-block">TheCoder</span></a></h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('/blog');?>">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/chasethecoder/" target="_blank">LinkedIn</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/ChaseTheCoder" target="_blank">GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top mt-1">
+      <h1><a class="navbar-brand" href="<?php echo site_url('/'); ?>">chase<span class="blue-block">TheCoder</span></a></h1>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('/blog');?>">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/chasethecoder/" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/ChaseTheCoder" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </nav>

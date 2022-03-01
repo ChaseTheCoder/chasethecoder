@@ -3,6 +3,8 @@ $main_grey: #606060;
 $main_accent: #4CC9F0;
 $main_white: #FFFFFF;
 
+$main_accent_dark: #1ba0c9;
+
 * {
   background-color: $main_white;
   color: $main_black;
@@ -24,13 +26,14 @@ body {
 
 // ------------- NAVBAR
 .navbar{
-  width: 100%;
   position:sticky;
 }
 
 .navbar-brand {
   letter-spacing: .1rem;
 }
+
+.padding
 
 // ------------- FOOTER
 .footer{
@@ -267,7 +270,25 @@ body {
 }
 
 .search-by{
+  height: 200px;
   position: sticky;
+  top: 75px;
+}
+
+.post-search-category-link{
+  text-decoration: none;
+}
+
+.post-search-category{
+  text-decoration: none;
+  color: $main_accent;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.post-search-category:active{
+  color: $main_accent_dark;
 }
 
 .post-prev-title {
@@ -289,7 +310,7 @@ body {
 }
 
 .post-prev-cat a:hover{
-  background-color: $main_grey;
+  color: $main_accent_dark;
 }
 
 // ------------- SINGLE BLOG PAGE ------------- //
