@@ -1,3 +1,25 @@
+/* !
+Theme Name: Portfolio
+
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+
+Author: Chase Sheaff
+
+Author URI: chasethecoder.dev
+
+Description: Chase the Coder Portfolio 
+
+Version: 1.0
+
+License: GNU General Public License v2 or later
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain: chasethecoder
+
+Tags: custom
+
+*/
 * {
   background-color: #FFFFFF;
   color: #181717;
@@ -193,6 +215,11 @@ body {
 
 .private-repo {
   color: #606060;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .post-thumbnail img {

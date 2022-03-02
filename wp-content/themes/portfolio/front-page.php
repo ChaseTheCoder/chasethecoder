@@ -17,21 +17,21 @@
 
 <?php  $fields = get_fields(); ?>
 <?php if( $fields ): ?>
-  <hr/>
-  <div class="row section about-section py-5">
+  <hr id="about"/>
+  <div class="row section py-5">
     <div class="col-12 col-md-6 col-lg-4 about-image-col">
       <image class="about-image image" src="<?php echo $fields['about_image']; ?>" />
     </div>
     <div class="col-12 col-md-6 col-lg-8 pb-md-0 pb-2">
       <div class="about-content">
-        <h1 id="#about" class="section-title"><?php echo $fields['about_title']; ?></h1>
+        <h1 class="section-title"><?php echo $fields['about_title']; ?></h1>
         <p class="about-content2"><?php echo $fields['about_content']; ?></p>
       </div>
     </div>
   </div>
 <?php endif; ?>
 
-<hr/>
+<hr id="projects"/>
 <?php $args = array(
   'post_type' => 'post',
   'category_name' => 'project'
@@ -40,12 +40,11 @@
 <?php $arr_posts = new WP_Query( $args ); ?>
 <?php if($arr_posts->have_posts()) : ?>
   <?php $num = 0; ?>
-  <p class="section-title align text-center">Projects</p>
+  <h1 class="section-title text-center pt-4 pb-4">Projects</h1>
   <?php while($arr_posts->have_posts()) : ?>
     <?php $arr_posts->the_post(); ?>
     <?php ++$num; ?>
-    
-    <div class="row about-section">
+    <div class="row about-section pb-5">
       <div class="col-12 col-md-6 col-lg-5">
 
         <p class="project-title"><?php echo $num++; ?>  /  <?php the_title(); ?></p>
@@ -78,9 +77,8 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-7 pb-md-0 pb-4">
-        <!-- <?php the_post_thumbnail(); ?> -->
-        <image class="about-image image" src="<?php echo the_post_thumbnail_url(); ?>" />
+      <div class="col-12 col-md-6 col-lg-7 pb-md-0 pb-4 project-image-column">
+        <image class="project-image image" src="<?php echo the_post_thumbnail_url(); ?>" />
       </div>
 
     </div>
