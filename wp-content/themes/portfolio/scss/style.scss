@@ -362,9 +362,17 @@ body {
   font-weight: bold;
   padding-right: 20px;
 }
+.post-search-category:hover{
+  color: $main_accent_dark;
+}
+
+.post-search-category:active{
+  color: $main_grey;
+}
 
 .selected-category{
   color: $main_accent_dark !important;
+  text-decoration: underline;
 }
 
 .post-search-category:active{

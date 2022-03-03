@@ -351,6 +351,19 @@ body {
   padding-right: 20px;
 }
 
+.post-search-category:hover {
+  color: #1ba0c9;
+}
+
+.post-search-category:active {
+  color: #606060;
+}
+
+.selected-category {
+  color: #1ba0c9 !important;
+  text-decoration: underline;
+}
+
 .post-search-category:active {
   color: #1ba0c9;
 }
