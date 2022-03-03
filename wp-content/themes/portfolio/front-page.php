@@ -31,6 +31,31 @@
   </div>
 <?php endif; ?>
 
+<hr id="about"/>
+
+<?php $languages = [
+  ['<i class="fa-brands fa-html5 language-icon"></i>', 'HTML'],
+  ['<i class="fa-brands fa-css3-alt language-icon"></i>', 'CSS'],
+  ['<i class="fa-brands fa-sass language-icon"></i>', 'SASS'],
+  ['<i class="fa-brands fa-bootstrap language-icon"></i>', 'Bootstrap'],
+  ['<i class="fa-brands fa-js-square language-icon"></i>', 'JavaScript'],
+  ['<i class="fa-brands fa-node language-icon"></i>', 'Node.js'],
+  ['<i class="fa-brands fa-react language-icon"></i>', 'React'],
+  ['<i class="fa-brands fa-wordpress-simple language-icon"></i>', 'WordPress'],
+  ['<i class="fa-brands fa-php language-icon"></i>', 'PHP']
+] ?>
+<h1 class="section-title text-center pt-4 pb-4">Tech I Use Often</h1>
+<div class="row justify-content-center ">
+  <?php foreach($languages as $language) : ?>
+    <div class="col p-2 language-div text-center">
+      <?php echo $language[0]; ?>
+      <p><?php echo $language[1]; ?></p>
+    </div>
+    <?php endforeach; ?>
+</div>
+
+
+
 <hr id="projects"/>
 <?php $args = array(
   'post_type' => 'post',

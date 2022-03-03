@@ -169,6 +169,19 @@ body {
 }
 
 // ------------- ABOUT SECTION
+
+.language-div{
+  width: max-content;
+}
+
+.language-div i {
+  color: $main_accent;
+}
+
+.language-icon{
+  font-size: 3rem;
+}
+
 .about-image-column{
   width: 100%;
 }
@@ -332,8 +345,8 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.search-by{
-  height: 200px;
+.archive-search-col{
+  height:max-content;
   position: sticky;
   top: 75px;
 }
@@ -350,7 +363,9 @@ body {
   padding-right: 20px;
 }
 
-
+.selected-category{
+  color: $main_accent_dark !important;
+}
 
 .post-search-category:active{
   color: $main_accent_dark;
@@ -376,6 +391,12 @@ body {
 
 .post-prev-cat a:hover{
   color: $main_accent_dark;
+}
+
+@media only screen and (max-width: 768px){
+  .archive-search-col{
+    position:static;
+  }
 }
 
 // ------------- SINGLE BLOG PAGE ------------- //

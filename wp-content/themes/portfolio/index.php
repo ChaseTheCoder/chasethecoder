@@ -4,8 +4,8 @@
   <div class="col-md-6 col-12 blog-left">
     <?php if ( is_home() ) : ?>
       <img src="<?php echo get_the_post_thumbnail_url(23,'full'); ?>" alt="header" />
-      <?php else  : ?>
-        <img src="<?php echo get_the_post_thumbnail_url('full'); ?>" alt="header" />
+      <?php else  : //this is sill and need to fix ?>
+        <img src="<?php echo get_the_post_thumbnail_url(23, 'full'); ?>" alt="header" />
     <?php endif; ?>
   </div>
   
@@ -16,16 +16,24 @@
 </div>
 
 <div class="row">
-  <div class="col-4 search-by">
+  <div class="col-12 col-md-4 pb-4 archive-search-col">
     <hr/>
     <p>Search By Topic</p>
     <?php $categories = get_categories();
-      foreach($categories as $category) {
-        echo '<a class="post-search-category-link" href="' . get_category_link($category->term_id) . '"><p class="post-search-category">' . $category->name . '</p></a>';
-      } ?>
+    // get the category object for the current category
+    $thisTrueCat = get_category( get_query_var( 'cat' ) );
+      foreach($categories as $category) :
+        if ($thisTrueCat->term_id == $category->term_id) :
+          echo '<a class="post-search-category-link" href="' . get_category_link($category->term_id) . '"><p class="post-search-category selected-category">' . $category->name . '</p></a>';
+        else:
+          echo '<a class="post-search-category-link" href="' . get_category_link($category->term_id) . '"><p class="post-search-category">' . $category->name . '</p></a>';
+        endif;
+      endforeach;
+      ?>
+      
   </div>
 
-  <div class="col-8">
+  <div class="col-12 col-md-8 archive-post-col">
    <?php 
     while(have_posts()):
       the_post(); ?>
