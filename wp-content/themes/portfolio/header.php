@@ -5,7 +5,8 @@
     <meta name="keywords" content="Chase The Coder Software Engineer Portfolio">
     <meta name="author" content="Chase Sheaff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Web tutorials">
+    <meta name="description" content="Chase The Coder, software engineer portoflio">
+    <meta name="" content="portfolio, javascript, React, PHP, Bootstrap, Node.js">
     <title>chaseTheCoder</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +21,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo get_site_url()."/#about";?>">About</a>
+            <a class="nav-link" href="<?php echo get_site_url()."/#projects";?>">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo get_site_url()."/#projects";?>">Projects</a>
+            <a class="nav-link" href="<?php echo get_site_url()."/#about";?>">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('/blog');?>">Blog</a>
