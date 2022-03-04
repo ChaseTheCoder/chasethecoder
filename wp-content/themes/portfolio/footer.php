@@ -11,3 +11,21 @@
   </div>
 </body>
 </html>
+
+<script>
+console.log(
+"HEY!", "\n",
+" ___", "\n",
+"(._.)", "\n",
+"<|>", "\n",
+"_/\_", "\n",
+"", "\n",
+"", "\n",
+"WHO said you could look here!", "\n",
+",___,", "\n",
+"[O.o]  hoo hoo", "\n",
+"/)__)", "\n",
+"-}-}-", "\n",
+"HAHAhahahahahahapleasehireme"
+)
+</script>
