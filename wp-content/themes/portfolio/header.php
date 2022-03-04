@@ -30,10 +30,10 @@
             <a class="nav-link" href="<?php echo site_url('/blog');?>">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/chasethecoder/" target="_blank">LinkedIn</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/chasethecoder/" target="_blank">LinkedIn&nbsp;&#8599;</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/ChaseTheCoder" target="_blank">GitHub</a>
+            <a class="nav-link" href="https://github.com/ChaseTheCoder" target="_blank">GitHub&nbsp;&#8599;</a>
           </li>
         </ul>
       </div>
