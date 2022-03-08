@@ -15,7 +15,7 @@
   <?php endwhile; ?>
 <?php endif; ?>
 
-<hr id="about"/>
+<hr/>
 
 <?php $languages = [
   ['<i class="fa-brands fa-html5 language-icon"></i>', 'HTML'],

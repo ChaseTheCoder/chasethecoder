@@ -56,6 +56,12 @@ body {
   letter-spacing: .1rem;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 // ------------- FOOTER
 .footer{
   padding: 2vh 0 2vh 0;
