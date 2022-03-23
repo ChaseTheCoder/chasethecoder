@@ -23,7 +23,7 @@ console.log(
 "", "\n",
 "WHO said you could look here!", "\n",
 ",___,", "\n",
-"[O.o]  hoo hoo", "\n",
+"[O.o]  whoo whoo", "\n",
 "/)__)", "\n",
 "-}-}-", "\n",
 "HAHAhahahahahahapleasehireme"

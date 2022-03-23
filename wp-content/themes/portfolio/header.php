@@ -42,6 +42,9 @@
             <a class="nav-link" href="<?php echo site_url('/blog');?>">Blog</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/document/d/1qK8RT64_saRk2IzGO2Tf-CoYcKFlND4LHiFeKRbyySw/edit?usp=sharing" target="_blank">Resume&nbsp;&#8599;</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/chasethecoder/" target="_blank">LinkedIn&nbsp;&#8599;</a>
           </li>
           <li class="nav-item">

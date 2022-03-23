@@ -22,9 +22,9 @@
   ['<i class="fa-brands fa-css3-alt language-icon"></i>', 'CSS'],
   ['<i class="fa-brands fa-sass language-icon"></i>', 'SASS'],
   ['<i class="fa-brands fa-bootstrap language-icon"></i>', 'Bootstrap'],
+  ['<i class="fa-brands fa-react language-icon"></i>', 'React'],
   ['<i class="fa-brands fa-js-square language-icon"></i>', 'JavaScript'],
   ['<i class="fa-brands fa-node language-icon"></i>', 'Node.js'],
-  ['<i class="fa-brands fa-react language-icon"></i>', 'React'],
   ['<i class="fa-brands fa-wordpress-simple language-icon"></i>', 'WordPress'],
   ['<i class="fa-brands fa-php language-icon"></i>', 'PHP']
   ] ?>
@@ -65,7 +65,7 @@
           <div class="row project-link-row">
             
             <div class="col-4">
-              <a href="<?php the_permalink(); ?>"><p class="project-link">What I Learned &nbsp;&#8599;</p></a>
+              <a href="<?php the_permalink(); ?>"><p class="project-link">Read More &nbsp;&#8599;</p></a>
             </div>
             
             <div class="col-4">
