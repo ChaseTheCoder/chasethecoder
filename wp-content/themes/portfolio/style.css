@@ -25,7 +25,7 @@ Tags: custom
   color: #181717;
 }
 
-body {
+.webpage {
   width: 90%;
   max-width: 1140px;
   margin: 0 auto;
@@ -41,6 +41,8 @@ body {
 
 .navbar {
   position: sticky;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .navbar-brand {
@@ -53,6 +55,11 @@ body {
   box-shadow: none;
 }
 
+.footer-section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .footer {
   padding: 2vh 0 2vh 0;
   text-decoration: none;
@@ -61,7 +68,6 @@ body {
 
 @media only screen and (max-width: 768px) {
   .footer-column {
-    width: 100%;
     text-align: center !important;
   }
 }
@@ -78,6 +84,7 @@ body {
 
 .footer-icon {
   padding-left: 10px;
+  color: #4CC9F0;
 }
 
 .spotlight-left {

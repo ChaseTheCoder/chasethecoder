@@ -33,7 +33,7 @@ $main_accent_dark: #1ba0c9;
   color: $main_black;
 }
 
-body {
+.webpage {
   width:90%;
   max-width: 1140px;
   margin: 0 auto;
@@ -50,6 +50,8 @@ body {
 // ------------- NAVBAR
 .navbar{
   position:sticky;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .navbar-brand {
@@ -63,6 +65,11 @@ body {
 }
 
 // ------------- FOOTER
+.footer-section{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .footer{
   padding: 2vh 0 2vh 0;
   text-decoration: none;
@@ -71,7 +78,7 @@ body {
 
 @media only screen and (max-width: 768px){
   .footer-column{
-    width: 100%;
+    // width: 90%;
     text-align: center !important;
   }
 }
@@ -79,7 +86,7 @@ body {
 .footer-right-text{
   text-decoration: none;
   color: $main_black;
-  padding-left: 2rem;
+  padding-left: 2rem; 
 }
 
 .footer-right-text:hover{
