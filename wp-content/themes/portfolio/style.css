@@ -25,6 +25,10 @@ Tags: custom
   color: #181717;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .webpage {
   width: 90%;
   max-width: 1140px;

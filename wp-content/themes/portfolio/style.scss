@@ -29,8 +29,12 @@ $main_white: #FFFFFF;
 $main_accent_dark: #1ba0c9;
 
 * {
-  background-color: $main_white;
+  background-color: $main_white; 
   color: $main_black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .webpage {
