@@ -65,12 +65,12 @@
           <div class="row project-link-row">
             
             <div class="col-4">
-              <a href="<?php the_permalink(); ?>"><p class="project-link">Read More &nbsp;&#8599;</p></a>
+              <a href="<?php the_permalink(); ?>" class="project-link">Read More &nbsp;&#8599;</a>
             </div>
             
             <div class="col-4">
               <?php if($fields['github_repo']): ?>
-                <a href="<?php echo $fields['github_repo']; ?>" target="_blank"><p class="project-link">GitHub Repo &nbsp;&#8599;</p></a>
+                <a href="<?php echo $fields['github_repo']; ?>" target="_blank" class="project-link">GitHub Repo &nbsp;&#8599;</a>
                 <?php else : ?>
                   <p class="private-repo">(Private Repo)</p>
               <?php endif; ?>
@@ -78,7 +78,7 @@
                 
             <div class="col-4">
               <?php if($fields['live_site']): ?>
-                <a href="<?php echo $fields['live_site']; ?>" target="_blank"><p class="project-link">Live Site &nbsp;&#8599;</p></a>
+                <a href="<?php echo $fields['live_site']; ?>" target="_blank" class="project-link">Live Site &nbsp;&#8599;</a>
               <?php endif; ?>
             </div>
                   

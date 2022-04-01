@@ -17,6 +17,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
+
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
       <h1><a class="navbar-brand" href="<?php echo site_url('/'); ?>">chase<span class="blue-block">TheCoder</span></a></h1>
       <button 
@@ -54,3 +55,4 @@
       </div>
     </nav>
     <div class="webpage">
+    <main>

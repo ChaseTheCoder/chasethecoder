@@ -1,5 +1,4 @@
-  
-  </div>
+  </main>
   <div class="footer-section">
     <hr>
     <div class="row footer">

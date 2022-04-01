@@ -11,7 +11,7 @@
                 <?php echo '<img src="http://localhost:8888/chasethecoder/wp-content/uploads/2022/02/clint-patterson-dYEuFB8KQJk-unsplash-scaled.jpg" />'; ?>
           <?php endif; ?>
         </a>
-        <a class="post-prev-title" href="<?php the_permalink(); ?>"><p class="pt-3"><?php the_title(); ?></p></a>
+        <a class="post-prev-title pt-3" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         <?php  $fields = get_fields(); ?>
         <?php if( $fields ): ?>
           <p class="post-prev-pub"><?php echo $fields['languages'] ?></p>

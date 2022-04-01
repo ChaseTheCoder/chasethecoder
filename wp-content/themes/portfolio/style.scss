@@ -29,15 +29,18 @@ $main_white: #FFFFFF;
 $main_accent_dark: #1ba0c9;
 
 * {
-  background-color: $main_white; 
   color: $main_black;
+}
+
+body {
+  background-color: $main_white; 
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.webpage {
+main {
   width:90%;
   max-width: 1140px;
   margin: 0 auto;
@@ -56,6 +59,7 @@ html {
   position:sticky;
   padding-left: 30px;
   padding-right: 30px;
+  background-color: $main_white;
 }
 
 .navbar-brand {
@@ -103,8 +107,28 @@ html {
   color: $main_accent;
 }
 
-// ------------- FRONT SPOTLIGHT
+// ------------- ACCESSIBILITY
+a:focus-visible, button:focus-visible, select:focus-visible {
+  outline-style: solid;
+  outline-color: $main_accent_dark;
+  outline-width: 3px;
+}
 
+.skip-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  text-decoration: underline;
+  transform: translateY(-110%);
+  transition: transform 0.3s;
+}
+
+.skip-navigation:focus {
+  transform: translateY(0%);
+}
+
+// ------------- FRONT SPOTLIGHT
 .spotlight-left{
   padding-bottom: 15vh;
 }
@@ -136,8 +160,8 @@ html {
 }
 
 .spotlight-right img {
-  width: auto;
-  height: 83vh;
+  width: 80%;
+  height: auto;
   border-radius: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
