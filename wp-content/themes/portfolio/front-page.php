@@ -70,7 +70,7 @@
             
             <div class="col-4">
               <?php if($fields['github_repo']): ?>
-                <a href="<?php echo $fields['github_repo']; ?>" target="_blank" class="project-link">GitHub Repo &nbsp;&#8599;</a>
+                <a href="<?php echo $fields['github_repo']; ?>" target="_blank" class="project-link">GitHub &nbsp;&#8599;</a>
                 <?php else : ?>
                   <p class="private-repo">(Private Repo)</p>
               <?php endif; ?>
@@ -87,7 +87,7 @@
     </div>
               
     <div class="col-12 col-md-6 col-lg-7 pb-md-0 pb-4 project-image-column">
-      <image class="project-image image" src="<?php echo the_post_thumbnail_url(); ?>" />
+      <image class="project-image image" src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo esc_attr() ?>" />
     </div>
       
   </div>

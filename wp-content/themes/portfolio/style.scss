@@ -285,6 +285,11 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   width: 100%;
   border-radius: 15px;
 }
+@media only screen and (max-width: 768px){
+  .project-link, .private-repo{
+    font-size: .9rem;
+  }
+}
 
 // ------------- BLOG PAGE ------------- //
 
@@ -295,29 +300,20 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 
 // ------------- FRONT SPOTLIGHT
 
-.blog-right{
-  padding-bottom: 15vh;
-}
-
 .front-header-blog {
   font-size: 4rem;
   line-height: .9;
   text-align: center;
+  padding-bottom: 15vh;
 }
 
-.front-subheader{
-  font-size: 1.6rem;
-  padding-top: .5vh;
-  padding-right: 10vw;
-}
-
-.front-circle {
+.blog-circle {
   background-color: $main_accent;
   border-radius: 50%;
   height: 275px;
   width: 275px;
   padding-left: 10vw;
-  padding-top: -30vh;
+  padding-bottom: 15vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -327,8 +323,8 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 }
 
 .blog-left img {
-  width: auto;
-  height: 83vh;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   align-items: left;
@@ -336,9 +332,9 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 
 @media only screen and (max-width: 1150px){
   .blog-left img {
-    width: 80%;
+    width: 75%;
     height: auto;
-    max-height: 100%;
+    // max-height: 100%;
   }
   .blog-right{
     max-height: 100%;
@@ -346,31 +342,27 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 }
 
 @media only screen and (max-width: 768px){
-  .blog-right{
-    padding-bottom: 5vh;
+  .blog-left img {
+    width: 50%;
+    height: auto;
   }
 
-  .spotlight-image{
-    width: 100%;
-    height: auto;
+  // .blog-right{
+  //   display: block;
+  // }
+
+  .blog-circle{
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .front-circle{
-    margin-left: 20vw;
-  }
-  .front-header{
+
+  .front-header-blog {
     font-size: 3rem;
-    line-height: .9;
-    margin-top: 10vh;
-  }
-  .front-subheader{
-    padding-right: 40vw;
-  }
-  .blog-left img {
-    width: 80%;
-    height: auto;
-    display:block;
-    margin:auto;
-    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -379,13 +371,7 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   background: linear-gradient(180deg, $main_white 0%, $main_white 50%, $main_accent 50%, $main_accent 100%);
 }
 
-// ------------- POSTS
-.post-thumbnail img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+// ------------- SEARCH BY TOPIC
 
 .archive-search-col{
   height:max-content;
@@ -393,16 +379,14 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   top: 75px;
 }
 
-.post-search-category-link{
-  text-decoration: none;
-}
-
 .post-search-category{
+  text-decoration: none;
   text-decoration: none;
   color: $main_accent;
   text-transform: uppercase;
   font-weight: bold;
   padding-right: 20px;
+  display: block;
 }
 .post-search-category:hover{
   color: $main_accent_dark;
@@ -419,6 +403,15 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 
 .post-search-category:active{
   color: $main_accent_dark;
+}
+
+// ------------- POST THUMBNAILS
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .post-prev-title {

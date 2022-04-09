@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Chase The Coder Software Engineer Portfolio">
@@ -54,5 +54,4 @@
         </ul>
       </div>
     </nav>
-    <div class="webpage">
     <main>

@@ -275,34 +275,31 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   border-radius: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .project-link, .private-repo {
+    font-size: 0.9rem;
+  }
+}
 .post-thumbnail img {
   width: 40%;
   height: auto;
-}
-
-.blog-right {
-  padding-bottom: 15vh;
 }
 
 .front-header-blog {
   font-size: 4rem;
   line-height: 0.9;
   text-align: center;
+  padding-bottom: 15vh;
 }
 
-.front-subheader {
-  font-size: 1.6rem;
-  padding-top: 0.5vh;
-  padding-right: 10vw;
-}
-
-.front-circle {
+.blog-circle {
   background-color: #4CC9F0;
   border-radius: 50%;
   height: 275px;
   width: 275px;
   padding-left: 10vw;
   padding-top: -30vh;
+  padding-bottom: 15vh;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -312,8 +309,8 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 }
 
 .blog-left img {
-  width: auto;
-  height: 83vh;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   align-items: left;
@@ -321,9 +318,8 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 
 @media only screen and (max-width: 1150px) {
   .blog-left img {
-    width: 80%;
+    width: 75%;
     height: auto;
-    max-height: 100%;
   }
 
   .blog-right {
@@ -331,47 +327,28 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   }
 }
 @media only screen and (max-width: 768px) {
-  .blog-right {
-    padding-bottom: 5vh;
-  }
-
-  .spotlight-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .front-circle {
-    margin-left: 20vw;
-  }
-
-  .front-header {
-    font-size: 3rem;
-    line-height: 0.9;
-    margin-top: 10vh;
-  }
-
-  .front-subheader {
-    padding-right: 40vw;
-  }
-
   .blog-left img {
-    width: 80%;
+    width: 50%;
     height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 15px;
+  }
+
+  .blog-circle {
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .front-header-blog {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 0;
   }
 }
 .blue-block {
   background: #FFFFFF;
   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 50%, #4CC9F0 50%, #4CC9F0 100%);
-}
-
-.post-thumbnail img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .archive-search-col {
@@ -380,16 +357,14 @@ a:focus-visible, button:focus-visible, select:focus-visible {
   top: 75px;
 }
 
-.post-search-category-link {
-  text-decoration: none;
-}
-
 .post-search-category {
+  text-decoration: none;
   text-decoration: none;
   color: #4CC9F0;
   text-transform: uppercase;
   font-weight: bold;
   padding-right: 20px;
+  display: block;
 }
 
 .post-search-category:hover {
@@ -407,6 +382,13 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 
 .post-search-category:active {
   color: #1ba0c9;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .post-prev-title {
