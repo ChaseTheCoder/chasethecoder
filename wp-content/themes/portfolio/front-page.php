@@ -87,7 +87,7 @@
     </div>
               
     <div class="col-12 col-md-6 col-lg-7 pb-md-0 pb-4 project-image-column">
-      <image class="project-image image" src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php echo esc_attr() ?>" />
+      <image class="project-image image" src="<?php echo the_post_thumbnail_url(); ?>" />
     </div>
       
   </div>
