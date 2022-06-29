@@ -2,9 +2,9 @@
 Contributors: Andi Dittrich, aenondynamics
 Tags: syntax highlighting, syntax highlighter, highlighter, highlighting, classic editor, gutenberg, javascript, code, coding, sourcecode,customizable, visual editor, tinymce, themes, css, html, php, js, xml, c, cpp, c#, ruby, shell, java, python, sql, rust, matlab, json, ini, config, cython, lua, assembly, asm
 Donate link: https://enlighterjs.org
-Requires at least: 5.5
-Tested up to: 5.8
-Stable tag: 4.4.2
+Requires at least: 5.8
+Tested up to: 6.0
+Stable tag: 4.5.0
 License: GPL-2.0
 License URI: https://opensource.org/licenses/gpl-2.0.php
 
@@ -137,7 +137,45 @@ Everything has been changed - read enlighterjs.org/wp-v4 before upgrading - THIS
 
 The WordPress plugin [related FAQ page](https://github.com/EnlighterJS/documentation/blob/master/wordpress/FAQ.md) is available [on GitHub](https://github.com/EnlighterJS/documentation/blob/master/wordpress/FAQ.md) within the documentation repository!
 
+
 ## Changelog ##
+
+### 4.5.0 ###
+
+* Added: EnlighterJS `v3.5.0`
+* Added: EnlighterJS Gutenberg editor plugin `v1.2.0`
+* Added: Gutenberg left-align-indentation formatting button
+* Added: block transformation from SyntaxHighlighter Evolved
+* Added: selected language as button text to the block toolbar
+* Added: basic support for windows `batch` / `bat` file syntax
+* Added: `dart` language support - thanks to [whiplashoo on GitHub](https://github.com/EnlighterJS/EnlighterJS/pull/185)
+* Added: dedicated MariaDB/MySQL language support `mariadb`
+* Added: dedicated Oracle Database language support `oracledb` (no special rules yet)
+* Added: dedicated MSSQL language support `mssql` (no special rules yet)
+* Added: dedicated PostgreSQL language support `postgresql` (no special rules yet)
+* Added: `constraints` to `sql`
+* Changed: WordPress version `>=5.8` required!
+* Changed: splitted sql language into several types/dialects for further extension
+* Changed: removed pound style comments from generic `sql` support
+* Changed: removed keywords `bigint` and `unsigned` from generic `sql` support
+* Changed: `droide` theme color `#009999` to `#007f7f` for higher contrast (WCAG) - thanks to [aphelionz on GitHub](https://github.com/EnlighterJS/EnlighterJS/pull/117)
+* Changed: in case of a tokenizer error, the tokenizer will silently fail (output to console) instead of throwing an error - code will still be displayed but related tokens are missing
+* Bugfix: Gutenberg inline editing not working on Safari due to required `rangeCount` call - thanks to [phruse on GitHub](https://github.com/EnlighterJS/Plugin.Gutenberg/issues/36)
+* Bugfix: Gutenberg inline popover window content is collapsed in recent Gutenberg releases
+* Bugfix: Gutenberg editor deprecation warnings related to Toolbar elements
+* Bugfix: fixed Gutenberg editor deprecation warning related to widget - thanks to [ Jolle775 on GitHub](https://github.com/EnlighterJS/Plugin.WordPress/issues/348)
+* Bugfix: Enlighter low-level shortcode handler regex failure caused invalid content matching for language shortcodes - thanks to [michael8888 on WordPress.org Forums](https://wordpress.org/support/topic/regex-bug/)
+* Bugfix: `yaml` integer numbers not highlighted
+* Bugfix: `php` variable and function names followed by single/double quotes were interpreted as name - thanks to [oleg-dk on GitHub](https://github.com/EnlighterJS/EnlighterJS/issues/178)
+* Bugfix: `php` method names which equals a keyword were highlighted as keyword - thanks to [oleg-dk on GitHub](https://github.com/EnlighterJS/EnlighterJS/issues/181)
+* Bugfix: `php` method calls on variables were interpreted as variable name - thanks to [oleg-dk on GitHub](https://github.com/EnlighterJS/EnlighterJS/issues/182)
+* Bugfix: `latex` command on first line not recognized - thanks to [MamounImadRajab on GitHub](https://github.com/EnlighterJS/EnlighterJS/issues/169)
+* Bugfix: `javascript` regular expressions are match over multiple lines - thanks to [mrdexters1 on Wordpress.org Forums](https://wordpress.org/support/topic/problem-with-the-division-symbol/#post-15257942)
+* Bugfix: tokenizer loop limit was calculated in total instead of per-rule
+* Bugfix: keywords of `generic` language requires a word-boundary before+after instead of a non word character - thanks to [Irwanda04 on GitHub](https://github.com/EnlighterJS/EnlighterJS/issues/129)
+* Bugfix: allow any non-whitespace chars in sql column name literals
+* Bugfix: added missing `string` keyword to `c#` type list
+* Bugfix: pound and double-slash style comments also matched the last character before the comment
 
 ### 4.4.2 ###
 
