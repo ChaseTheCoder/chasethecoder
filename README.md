@@ -6,7 +6,6 @@ A minimalist design portfolio to display my projects and blog about my work.
 
 * Wordpress: PHP, JavaScript, HTML, CSS
 * SASS
-* 
 
 ## Project Status
 
