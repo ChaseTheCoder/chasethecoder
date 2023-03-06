@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/chasetl8/public_html/
-    - /bin cp * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
